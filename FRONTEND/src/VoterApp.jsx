@@ -19,7 +19,8 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function VoterApp() {
-  const baseUrl = `http://localhost:2030/2300032150-backend`;
+  
+  const baseUrl = `${import.meta.env.VITE_API_URL}`;
   const [voter, setVoter] = useState({
     id: "",
     name: "",
